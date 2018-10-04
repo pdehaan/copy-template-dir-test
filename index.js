@@ -1,5 +1,5 @@
 const path = require("path");
-const {promisify} = require("util");
+const { promisify } = require("util");
 const copyTemplateDir = require("copy-template-dir");
 
 const params = {
@@ -9,7 +9,7 @@ const params = {
 
 main("templates", "dest", params);
 
-async function main(srcDir, destDir, params={}) {
+async function main(srcDir, destDir, params = {}) {
   const src = path.join(__dirname, srcDir);
   const dest = path.join(__dirname, destDir);
   const copy = promisify(copyTemplateDir);

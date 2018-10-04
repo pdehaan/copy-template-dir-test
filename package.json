@@ -1,18 +1,29 @@
 {
   "name": "copy-template-dir-test",
+  "description": "Test the copy-template-dir npm module",
   "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/copy-template-dir-test/issues"
+  },
   "dependencies": {
     "copy-template-dir": "1.4.0",
     "rimraf": "2.6.2"
   },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/copy-template-dir-test#readme",
   "keywords": [],
   "license": "MPL-2.0",
   "main": "index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/copy-template-dir-test.git"
+  },
   "scripts": {
     "build": "node index",
-    "prebuild": "rimraf dest",
+    "clean": "rimraf dest",
+    "prebuild": "npm run clean",
     "start": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
