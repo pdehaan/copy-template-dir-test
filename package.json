@@ -1,0 +1,19 @@
+{
+  "name": "copy-template-dir-test",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "dependencies": {
+    "copy-template-dir": "1.4.0",
+    "rimraf": "2.6.2"
+  },
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "node index",
+    "prebuild": "rimraf dest",
+    "start": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

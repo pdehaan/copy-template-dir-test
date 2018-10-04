@@ -1,0 +1,12 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0-beta",
+  "description": "Sample webextension",
+  "applications": {
+    "gecko": {
+      "id": "{{name}}@shield.mozilla.com",
+      "strict_min_version": "63.0"
+    }
+  },
+  "homepage_url": "https://github.com/pdehaan/copy-template-dir-test"
+}
